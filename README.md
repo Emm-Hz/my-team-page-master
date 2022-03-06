@@ -70,6 +70,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub Emm-Hz(https://github.com/Emm-Hz)
+- Twitter Emmjo_Hz(https://twitter.com/Emmjo_Hz?t=31NPikEp8dRV-JphSu8QIg&s=08)
