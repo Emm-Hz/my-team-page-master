@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+:root {
+  /* fonts */
+  --serif: "PT Serif", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --Montserrat: "Montserrat", sans-serif;
+  /* Colors */
+  --gray: #a9a9a9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--color-primario);
+  background-color: var(--color-secundario);
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+.wrapper {
+  margin: auto;
+  width: 50vw;
+}
+
+.top-header {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+  padding-top: 2rem;
+  width: 47vw;
+}
+
+.top-header > h2 {
+  place-self: baseline;
+  font-family: var(--serif);
+}
+
+.top-header span {
+  font-family: var(--poppins);
+  font-size: clamp(0.88rem, calc(0.73rem + 0.56vw), 1.13rem);
+}
+
+.top-header span b {
+  font-size: 1.125rem;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.members {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  width: 15vw;
+}
+
+.labor {
+  width: 15%;
+  height: fit-content;
+  font-family: var(--serif);
+  font-size: clamp(0.63rem, calc(0.55rem + 0.28vw), 0.75rem);
+  line-height: 1rem;
+  text-transform: full-width;
+  writing-mode: vertical-lr;
+}
+
+.name p {
+  padding-top: 1rem;
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: clamp(0.88rem, calc(0.73rem + 0.56vw), 1.13rem);
+  line-height: 1.6875rem;
+}
+
+.pushDown {
+  padding-top: 8rem;
+}
+
+footer {
+  padding-bottom: 1rem;
+  text-align: center;
+  font-family: var(--Montserrat);
+  color: var(--gray);
+}
+
+@media screen and (max-width: 62.5rem) {
+  .wrapper {
+    width: max-content;
+  }
+
+  .top-header {
+    flex-direction: column;
+    width: max-content;
+  }
+
+  .top-header h2 {
+    padding-bottom: 2rem;
+  }
+
+  .top-header span {
+    place-self: baseline;
+  }
+
+  .team {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, minmax(19rem, max-content));
+    grid-gap: 0 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .members {
+     max-width: 43vw;
+     width: max-content
+  }
+
+  .pushDown {
+    padding-top: 0;
+  }
+
+  .mobileDown {
+    padding-top: 3rem;
+  }
+}
